@@ -1,0 +1,174 @@
+/* Importando fontes do Google */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Roboto:wght@400;700&display=swap');
+
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+}
+
+body {
+  background-color: #f8f4ff;
+  color: #000000;;
+  line-height: 1.6;
+}
+
+header {
+  background-color:#7e57c2;;;
+  color: white;
+  padding: 1rem 0;
+  text-align: center;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+  font-family: 'Poppins', sans-serif;
+  margin-bottom: 0.5rem;
+}
+
+header nav a {
+  color: white;
+  margin: 0 1rem;
+  text-decoration: none;
+  font-weight: bold;
+  font-family: 'Poppins', sans-serif;
+  transition: color 0.3s;
+}
+
+header nav a:hover {
+  color: #d1c4e9;
+}
+
+main {
+  padding: 2rem;
+}
+
+.product-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.product-card {
+  background-color: white;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin: 1rem;
+  padding: 1rem;
+  width: 300px;
+  text-align: center;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.product-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.product-card img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 4px;
+  transition: transform 0.2s;
+}
+
+.product-card img:hover {
+  transform: scale(1.1);
+}
+
+.product-card h2 {
+  margin: 1rem 0;
+  color:#000000;;
+  font-family: 'Poppins', sans-serif;
+}
+
+.product-card p {
+  margin: 0.5rem 0;
+  font-family: 'Roboto', sans-serif;
+}
+
+.product-card a,
+.product-card form button {
+  display: inline-block;
+  margin: 0.5rem 0;
+  padding: 0.5rem 1rem;
+  background-color:#7e57c2;;;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  text-decoration: none;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+.product-card a:hover,
+.product-card form button:hover {
+  background-color: #6a0080;
+  transform: translateY(-3px);
+}
+
+.product-form {
+  max-width: 500px;
+  margin: 2rem auto;
+  padding: 1.5rem;
+  background-color: white;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.product-form:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.product-form h2 {
+  margin-bottom: 1.5rem;
+  color: #6a0080;
+  text-align: center;
+  font-family: 'Poppins', sans-serif;
+}
+
+.product-form label {
+  display: block;
+  margin-bottom: 0.5rem;
+  color:#7e57c2;;
+  font-family: 'Roboto', sans-serif;
+}
+
+.product-form input[type="text"],
+.product-form input[type="number"],
+.product-form input[type="file"] {
+  width: 100%;
+  padding: 0.75rem;
+  margin-bottom: 1.5rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  transition: border-color 0.3s;
+}
+
+.product-form input[type="text"]:focus,
+.product-form input[type="number"]:focus,
+.product-form input[type="file"]:focus {
+  border-color: #9c27b0;
+}
+
+.product-form button {
+  width: 100%;
+  padding: 0.75rem;
+  background-color: #9c27b0;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+.product-form button:hover {
+  background-color:#7e57c2;;
+  transform: translateY(-3px);
+}
